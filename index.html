@@ -269,6 +269,7 @@ section { padding: 90px 0; }
 .project-card::before {
   content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity 0.3s;
   background: linear-gradient(135deg, rgba(108,71,255,0.06), transparent);
+  pointer-events: none;
 }
 .project-card:hover { transform: translateY(-5px); border-color: rgba(108,71,255,0.3); }
 .project-card:hover::before { opacity: 1; }
