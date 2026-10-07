@@ -4,7 +4,7 @@ export const profile = {
   email: 'ritheeshk2003@gmail.com',
   linkedin: 'https://www.linkedin.com/in/ritheeshreddykura/',
   github: 'https://github.com/r4coder',
-  resume: '/Ritheesh_Reddy_Kura_Resume.pdf',
+  resume: 'https://drive.google.com/file/d/1u16T4kP-s_iBop_Bgjw-9g4jDAB5ur4j/view?usp=sharing',
 }
 
 export const nav = [
