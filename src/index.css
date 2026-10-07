@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body {
+  @apply bg-ink text-zinc-200 font-sans antialiased;
+  background-image:
+    radial-gradient(60rem 30rem at 80% -10%, rgba(142,162,255,.10), transparent 60%),
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: auto, 56px 56px, 56px 56px;
+  background-attachment: fixed;
+}
+:focus-visible { outline: 2px solid #8ea2ff; outline-offset: 3px; border-radius: 6px; }
+::selection { background: rgba(142,162,255,.35); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
