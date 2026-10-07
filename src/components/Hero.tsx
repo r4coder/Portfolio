@@ -36,7 +36,7 @@ export default function Hero() {
         </motion.p>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} className="mt-8 flex flex-wrap items-center gap-3">
           <Magnetic><a href="#projects" className="inline-flex items-center gap-2 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-black transition hover:brightness-110">View projects <ArrowDown size={15} /></a></Magnetic>
-          <Magnetic><a href={profile.resume} download className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/5"><Download size={15} /> Download resume</a></Magnetic>
+          <Magnetic><a href={profile.resume} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/5"><Download size={15} /> View resume</a></Magnetic>
           <Magnetic><a href="#contact" className="inline-flex rounded-lg px-5 py-3 text-sm font-medium text-zinc-300 transition hover:text-white">Contact me</a></Magnetic>
         </motion.div>
         <div className="mt-8 flex gap-2">
