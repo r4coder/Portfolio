@@ -17,7 +17,7 @@ export default function CommandPalette({ open, setOpen }: { open: boolean; setOp
     { label: 'Go to Education', run: go('education') }, { label: 'Contact', run: go('contact') },
     { label: 'GitHub', run: ext(profile.github) }, { label: 'LinkedIn', run: ext(profile.linkedin) },
     { label: 'Send email', run: () => { window.location.href = `mailto:${profile.email}` } },
-    { label: 'Download resume', run: () => { const a = document.createElement('a'); a.href = profile.resume; a.download = ''; a.click() } },
+    { label: 'View resume', run: ext(profile.resume) },
   ], [])
   const list = items.filter((i) => i.label.toLowerCase().includes(q.toLowerCase()))
 
